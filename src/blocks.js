@@ -12,7 +12,7 @@ export default (editor, opt = {}) => {
         <mj-column><mj-text>Content 1</mj-text></mj-column>
       </mj-section>`,
     attributes: { class: 'gjs-fonts gjs-f-b1' },
-    ...allBlocks,
+    category: 'Columns',
   });
 
   bm.add('mj-2-columns', {
