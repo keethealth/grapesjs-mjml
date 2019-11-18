@@ -1,4 +1,3 @@
-const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const fs = require('fs');
@@ -47,13 +46,7 @@ module.exports = (env, options) => {
     },
     // make sure to keep_fnames or else it will break grapesjs, see https://github.com/artf/grapesjs-mjml/issues/110
     optimization: {
-      minimizer: [
-        new TerserPlugin({
-          terserOptions: {
-            keep_fnames: true
-          },
-        }),
-      ],
+      minimizer: [],
     },
     target: 'web',
     plugins: plugins
