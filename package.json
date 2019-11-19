@@ -1,8 +1,11 @@
 {
   "name": "@keethealth/grapesjs-mjml",
-  "version": "0.1.21",
+  "version": "0.2.0",
   "description": "MJML Componenets integration in GrapesJS",
   "main": "dist/grapesjs-mjml.min.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
